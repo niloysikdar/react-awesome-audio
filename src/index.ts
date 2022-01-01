@@ -1,1 +1,1 @@
-console.log('Hello');
+export { useAudio } from './useAudio';
