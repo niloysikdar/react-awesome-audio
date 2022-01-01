@@ -1,6 +1,7 @@
 {
   "name": "react-awesome-audio",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "private": false,
   "description": "Optimized and Supercharged React hook to play audio without any DOM element 💪🎧",
   "author": {
     "name": "Niloy Sikdar",
