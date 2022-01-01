@@ -27,7 +27,7 @@
     "build": "tsc -p tsconfig.json",
     "watch": "tsc --watch",
     "cm": "cz",
-    "lint": "eslint src/**/*",
+    "lint": "eslint src/**/* --fix",
     "prettier:fix": "prettier --write .",
     "prettier:check": "prettier --check .",
     "lint-staged": "lint-staged",
