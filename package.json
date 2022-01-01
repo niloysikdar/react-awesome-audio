@@ -1,0 +1,36 @@
+{
+  "name": "react-awesome-audio",
+  "version": "1.0.0",
+  "description": "Coming Soon",
+  "author": {
+    "name": "Niloy Sikdar",
+    "email": "niloysikdar30@gmail.com",
+    "url": "https://github.com/niloysikdar"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niloysikdar/react-awesome-audio.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "",
+    ""
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc --watch"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.38",
+    "react": "^17.0.2",
+    "typescript": "^4.5.4"
+  }
+}
