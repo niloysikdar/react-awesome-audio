@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/niloysikdar/react-awesome-audio.git"
+    "url": "https://github.com/niloysikdar/react-awesome-audio.git"
   },
   "bugs": {
     "email": "niloysikdar30@gmail.com",
@@ -26,10 +26,12 @@
     "prepare": "npx husky install",
     "build": "tsc -p tsconfig.json",
     "watch": "tsc --watch",
+    "cm": "cz",
     "lint": "eslint src/**/*",
     "prettier:fix": "prettier --write .",
     "prettier:check": "prettier --check .",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "semantic-release": "semantic-release --branches main"
   },
   "husky": {
     "hooks": {
@@ -46,9 +48,11 @@
     "react": ">=16.8"
   },
   "devDependencies": {
+    "@types/node": "^17.0.6",
     "@types/react": "^17.0.38",
     "@typescript-eslint/eslint-plugin": "^5.8.1",
     "@typescript-eslint/parser": "^5.8.1",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -56,6 +60,7 @@
     "lint-staged": "^12.1.4",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
+    "semantic-release": "^18.0.1",
     "typescript": "^4.5.4"
   },
   "keywords": [
@@ -75,5 +80,10 @@
     "react-hooks",
     "hooks",
     "optimized"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
