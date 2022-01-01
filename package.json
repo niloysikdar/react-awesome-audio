@@ -35,6 +35,11 @@
     "prettier:check": "prettier --check .",
     "lint-staged": "lint-staged"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "src/*.{ts,tsx}": [
       "npm run prettier:fix",
