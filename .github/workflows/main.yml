@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x, 15.x]
+        node-version: [12.x, 14.x, 15.x]
         os: [ubuntu-latest, windows-latest, macos-latest]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm ci
+      - run: npm install
       - run: npm run lint
       - run: npm run prettier:check
       - run: npm run test --if-present
@@ -39,7 +39,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm ci
+      - run: npm install
       - run: npm run build
       - run: npm run semantic-release
         env:
