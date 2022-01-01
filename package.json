@@ -1,7 +1,7 @@
 {
   "name": "react-awesome-audio",
   "version": "1.0.0",
-  "description": "Coming Soon",
+  "description": "Optimized and Supercharged React hook to play audio without any DOM element 💪 🎧",
   "author": {
     "name": "Niloy Sikdar",
     "email": "niloysikdar30@gmail.com",
@@ -37,7 +37,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run lint-staged && git add -A ."
     }
   },
   "lint-staged": {
@@ -47,7 +47,7 @@
     ]
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=16.8"
   },
   "devDependencies": {
     "@types/react": "^17.0.38",
