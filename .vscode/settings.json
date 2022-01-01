@@ -1,0 +1,12 @@
+{
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "files.eol": "\n",
+  "editor.tabSize": 4,
+  "search.exclude": {
+    "node_modules/": true,
+    "dist/": true
+  }
+}
