@@ -76,7 +76,8 @@ export const useAudio = (options: optionsType) => {
 
     // Cleanup
     return () => {
-      !options.loop && audio.removeEventListener('ended', () => setIsplaying(false));
+      !options.loop &&
+        audio.removeEventListener('ended', () => setIsplaying(false));
     };
   }, [audio, options]);
 

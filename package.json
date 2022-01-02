@@ -1,6 +1,6 @@
 {
   "name": "react-awesome-audio",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "private": false,
   "description": "Optimized and Supercharged React hook to play audio without any DOM element 💪🎧",
   "author": {
@@ -42,6 +42,7 @@
   "lint-staged": {
     "src/*.{ts,tsx}": [
       "npm run prettier:fix",
+      "npm run prettier:check",
       "npm run lint"
     ]
   },
